@@ -91,7 +91,7 @@ This request will return the pricing details for the specified product and brand
 To get the pricing details, send the applicationDate, productId, and brandId as query parameters. The application will calculate the appropriate price and return it.  
 
 **Example**:
-```http
+```cURL
 curl --location 'http://localhost:8080/api/priceEntities?applicationDate=2020-06-14T10%3A00%3A00&productId=35455&brandId=1'
 ```
 
@@ -99,7 +99,7 @@ curl --location 'http://localhost:8080/api/priceEntities?applicationDate=2020-06
 If any required parameter is missing or invalid, the application will respond with a proper error message.  
 
 **Example (missing applicationDate)**:
-```http
+```cURL
 curl --location 'http://localhost:8080/api/prices?applicationDate=2024-06-14T10%3A00%3A00&productId=35455&brandId=1'
 ```
 **Response**:
